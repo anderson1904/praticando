@@ -13,7 +13,7 @@ def cabeçalho():
     return head
 
 
-def login(page: ft.Page):
+def login():
     nome =  ft.TextField(label="Usuário",bgcolor=ft.colors.WHITE, 
                          color = ft.colors.BLACK, height=30, text_size=14)
     
@@ -22,8 +22,7 @@ def login(page: ft.Page):
     
     esqueci = ft.ElevatedButton(text="ESQUECI MINHA SENHA", bgcolor= '#2cf01a',
                                 color=ft.colors.WHITE)
-    confirmar = ft.ElevatedButton(text="confirmar", bgcolor= '#129606',color=ft.colors.WHITE,
-                                  on_click=lambda _: page.go("/home"))
+    confirmar = ft.ElevatedButton(text="confirmar", bgcolor= '#129606',color=ft.colors.WHITE)
     return ft.Column(
         controls=[
             nome,
