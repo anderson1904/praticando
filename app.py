@@ -15,7 +15,7 @@ def main(page: ft.Page):
             page.views.append(rota_login(page))
         elif page.route == "/cadastro":
             page.views.append(rota_cadastro(page))
-    page.update()
+        page.update()
     page.on_route_change = paginação
     page.go(page.route)
 
