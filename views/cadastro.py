@@ -1,8 +1,9 @@
 import flet as ft
 
 def cabeçalho():
-    head = ft.Container(content = ft.Text("Bem-Vindo", size=40, color=ft.colors.WHITE10),
-                        border_radius=8,bgcolor=ft.colors.DEEP_PURPLE_100,
+    head = ft.Container(content = ft.Text("Bem-Vindo", size=30, color=ft.colors.WHITE),
+                        border_radius=8,bgcolor=ft.colors.DEEP_PURPLE_ACCENT_200,
+                        alignment=ft.alignment.top_center
                         )
     return head
 def cadastro():
